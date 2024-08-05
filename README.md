@@ -19,7 +19,7 @@ This project aims to improve data literacy through a fun and interactive experie
 1. **Gameplay Behavior Pack**: Implements core gameplay mechanics and data visualizations.
 2. **NPC Dialogue Behavior Pack**: Manages NPC interactions and dialogue systems.
 3. **Gameplay Resource Pack**: Provides visual assets for the gameplay features.
-4. **World Template (`dtworld`)**: A pre-configured world that works seamlessly with the provided packs.
+4. **World Template (`dtworld`)**: A pre-configured world that works well with the provided packs.
 
 
 ## Installation
