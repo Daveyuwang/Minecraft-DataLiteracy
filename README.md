@@ -35,7 +35,8 @@ The detailed contents can be extracted from the above two files if needed.
 
 #### For Windows Users
 Game file location:
-%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang
+
+`%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
 
 1. Place behavior packs in `\behavior_packs`
 2. Place resource packs in `\resource_packs`
