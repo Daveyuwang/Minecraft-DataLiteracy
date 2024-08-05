@@ -15,6 +15,13 @@ This project aims to improve data literacy through a fun and interactive experie
 - Latest version of Minecraft Bedrock Edition
 - Operating System: Windows 10/11 (Recommended)
 
+## Components
+1. **Gameplay Behavior Pack**: Implements core gameplay mechanics and data visualizations.
+2. **NPC Dialogue Behavior Pack**: Manages NPC interactions and dialogue systems.
+3. **Gameplay Resource Pack**: Provides visual assets for the gameplay features.
+4. **World Template (`dtworld`)**: A pre-configured world that works seamlessly with the provided packs.
+
+
 ## Installation
 
 ### Direct Installation
@@ -27,8 +34,8 @@ The detailed contents can be extracted from the above two files if needed.
 ### Manual Installation
 
 #### For Windows Users
-Game file location: `C:\Users\[Your Username]\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang`
-
+Game file location:
+%localappdata%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang
 
 1. Place behavior packs in `\behavior_packs`
 2. Place resource packs in `\resource_packs`
