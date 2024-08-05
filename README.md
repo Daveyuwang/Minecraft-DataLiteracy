@@ -1,5 +1,4 @@
 # Minecraft Data Literacy
-![Logo](https://github.com/Daveyuwang/Minecraft-DataLiteracy/blob/main/pack_icon.png)
 ## Overview
 
 This project aims to improve data literacy through a fun and interactive experience in Minecraft Bedrock Edition. Players engage in educational activities, such as NPC dialogues and data visualizations, to learn key data concepts. 
