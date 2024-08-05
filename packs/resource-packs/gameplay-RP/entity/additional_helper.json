@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "mg:helper2",
+            "materials": {
+                "default": "npc"
+            },
+            "textures": {
+                "default": "textures/entity/agent"
+            },
+            "geometry": {
+                "default": "geometry.agent"
+            },
+            "render_controllers": ["controller.render.default"],
+            "spawn_egg": {
+                "base_color": "#a0543b",
+                "overlay_color": "#43ad7d"
+            }
+        }
+    }
+}

@@ -1,0 +1,153 @@
+{
+  "format_version":"1.20",
+  "minecraft:npc_dialogue":{
+    "scenes":[
+      {
+        "scene_tag": "splot_1",
+        "npc_name": "Doto",
+        "text": "§5§lHello adventurer!§r§r\n\nTake a moment to observe the line graph on the left.",
+        "buttons":[
+          {
+            "name": "Take a look"
+          },
+          {
+            "name": ">Next",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p splot_2",
+              "/dialogue change @e[type=NPC,c=1] splot_2 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "splot_2",
+        "npc_name": "Doto",
+        "text": "§5I have a series of questions for you based on this graph. If you can answer them correctly, a special reward awaits you!§r\n\n §1§lAre you ready?§r§r",
+        "buttons":[
+          {
+            "name": "YES",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p splot_3",
+              "/dialogue change @e[type=NPC,c=1] splot_3 @p"
+            ]
+          },
+          {
+            "name": "NO",
+            "commands":[
+              "/dialogue change @e[type=NPC,c=1] splot_2 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "splot_3",
+        "npc_name": "Doto",
+        "text": "§l§1Question 1:§r§r\n\n§r§r As the level increases, does the quantity of §lStone§r in the scatter plot §l§2increase§r§r or §l§4decrease§r§r?",
+        "buttons":[
+          {
+            "name":"Increase",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p splot_3_fail"
+
+            ]
+          },
+          {
+            "name":"Decrease",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p splot_4",
+              "/dialogue change @e[type=NPC,c=1] splot_4 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "splot_3_fail",
+        "npc_name": "Doto",
+        "text": "§l§4INCORRECT!§r§r\n§l§1Question 1:§r§r\n\n§r§r As the level increases, does the quantity of §lStone§r in the scatter plot §l§2increase§r§r or §l§4decrease§r§r?",
+        "buttons":[
+          {
+            "name":"Increase",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p splot_3_fail"
+            ]
+          },
+          {
+            "name":"Decrease",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p splot_4",
+              "/dialogue change @e[type=NPC,c=1] splot_4 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "splot_4",
+        "npc_name": "Doto",
+        "text": "§l§1Question 2:§r§r\n\n§r§rRegarding the quantity of §l§3Diamonds§r§r, does the quantity show obvious §l§2increases§r§r or §l§4decreases§r§r as the level increases?",
+        "buttons":[
+          {
+            "name":"YES",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p splot_4_fail"
+            ]
+          },
+          {
+            "name":"NO",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p splot_5",
+              "/dialogue change @e[type=NPC,c=1] splot_5 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "splot_4_fail",
+        "npc_name": "Doto",
+        "text": "§l§4INCORRECT!§r§r\n§l§1Question 2:§r§r\n\n§r§rRegarding the quantity of §l§3Diamonds§r§r, does the quantity show obvious §l§2increases§r§r or §l§4decreases§r§r as the level increases?",
+        "buttons":[
+          {
+            "name":"YES",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p splot_4_fail"
+            ]
+          },
+          {
+            "name":"NO",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p splot_5",
+              "/dialogue change @e[type=NPC,c=1] splot_5 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "splot_5",
+        "npc_name": "Doto",
+        "text": "§l§1 Congratulations!§r§r\n\n§5You have answered all the questions correctly!§r\n\n§l§1Here is your reward!§r§r",
+        "buttons":[
+          {
+            "name": "Claim Reward",
+            "commands":[
+              "playsound random.orb @p",
+              "/give @p golden_apple 1",
+              "/dialogue change @e[type=NPC,c=1] splot_6 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "splot_6",
+        "npc_name": "Doto",
+        "text": "You've demonstrated a solid understanding of the data from the Mining Site. §l^_^§r\nNow, Dave is asking for your help. Please find him and see what he needs.\n§§l3beep-beep...§r\n§1+_+§r§r\n\n§b^_^ beep-blop...§r ",
+        "buttons":[
+          {
+            "name":"OK",
+            "commands":[
+              "/dialogue change @e[type=NPC,c=1] splot_6 @p"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

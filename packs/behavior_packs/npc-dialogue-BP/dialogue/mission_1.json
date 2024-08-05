@@ -1,0 +1,49 @@
+{
+  "format_version":"1.20",
+  "minecraft:npc_dialogue":{
+    "scenes":[
+      {
+        "scene_tag": "dave_1",
+        "npc_name": "Dave",
+        "text": "I am Dave, the smith in this town. I've heard about you passed all the data quizzes, young explorer.\n\n I have a task for you. I need you to find me 1 §l§3diamond§r§r ore.",
+        "buttons":[
+          {
+            "name": "No Problem"
+          },
+          {
+            "name": "I found it",
+            "commands":[
+              "/dialogue change @e[type=npc,c=1] dave_2 @p[hasitem={item=diamond_ore,quantity=1..}]",
+              "/dialogue open @e[type=npc,c=1] @p[hasitem={item=diamond_ore,quantity=1..}] dave_2"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dave_2",
+        "npc_name": "Dave",
+        "text": "§l§1EXCHANGE:§r§r\n\n §l[NEEDED]§r\n §2 x1 Diamond Ore§r\n\n §l[REWARD]§r\n §3 x1 Diamond Pickaxe§r",
+        "buttons":[
+          {
+            "name": "§l§6EXCHANGE§r§r",
+            "commands":[
+              "clear @p diamond_ore 0 1",
+              "give @p diamond_pickaxe 1",
+              "/dialogue change @e[type=NPC,c=1]  dave_3 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dave_3",
+        "npc_name": "Dave",
+        "text": "§lThank you.§r\n\n §l§1Enjoy your journey.§r§r",
+        "buttons":[
+          {
+            "name": "Done"
+          }
+        ]
+      }
+    ]
+  }
+}

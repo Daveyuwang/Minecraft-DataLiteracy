@@ -1,0 +1,19 @@
+{
+    "format_version": 2,
+    "header": {
+      "description": "§b§lData Literacy NPC Dialogue Behavior Pack§r§r",
+      "name": "Data-Literacy-NPC-Dialogue",
+      "uuid": "a93a2c13-7d5a-4ad9-90dc-f4d835d65e9a",
+      "version": [1, 0, 0],
+      "min_engine_version": [1, 17, 0]
+    },
+    "modules": [
+      {
+        "description": "NPC Dialogue Module",
+        "type": "data",
+        "uuid": "6d8cbcaa-a167-4d9d-ad7a-dc057ae2afc6",
+        "version": [1, 0, 0]
+      }
+    ]
+  }
+  

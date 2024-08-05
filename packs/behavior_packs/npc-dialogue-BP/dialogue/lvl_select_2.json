@@ -1,0 +1,49 @@
+{
+  "format_version":"1.20",
+  "minecraft:npc_dialogue":{
+    "scenes":[
+      {
+        "scene_tag": "selectlevel2",
+        "npc_name": "SELECT THE LEVEL 6-10",
+        "text": "\n\n\n§l§5SELECT THE LEVEL FOR THE VISUALIZATION§r§r\n\n§l§3THE MOUNTAIN MINING SITE§r§r\n§l§1LEVEL [6-10]§r§r",
+        "buttons":[
+          {
+            "name": "§l§16§r§r",
+            "commands":[
+              "/setblock -53 -27 203 redstone_block",
+              "/playsound random.orb @p"
+            ]
+          },
+          {
+            "name": "§l§17§r§r",
+            "commands":[
+              "/setblock -52 -27 202 redstone_block",
+              "/playsound random.orb @p"
+            ]
+          },
+          {
+            "name": "§l§18§r§r",
+            "commands":[
+              "/setblock -53 -27 202 redstone_block",
+              "/playsound random.orb @p"
+            ]
+          },
+          {
+            "name": "§l§19§r§r",
+            "commands":[
+              "/setblock -52 -27 201 redstone_block",
+              "/playsound random.orb @p"
+            ]
+          },
+          {
+            "name": "§l§110§r§r",
+            "commands":[
+              "/setblock -53 -27 201 redstone_block",
+              "/playsound random.orb @p"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

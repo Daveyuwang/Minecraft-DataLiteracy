@@ -1,0 +1,55 @@
+{
+  "format_version":"1.20",
+  "minecraft:npc_dialogue":{
+    "scenes":[
+      {
+        "scene_tag": "max_1",
+        "npc_name": "Miner Max",
+        "text": "Hi there! I'm Miner Max, your guide to all things mining. Nice tools you've got there! Ready to give them a whirl?",
+        "buttons":[
+          {
+            "name": "Next",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p max_2"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "max_2",
+        "npc_name": "Miner Max",
+        "text": "To break a block, just left-click and hold. Remember, your iron pickaxe is key > it lets you collect all these ores once you break them.",
+        "buttons":[
+          {
+            "name":"Previous",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p max_1"
+            ]
+          },
+          {
+            "name": "Next",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1] @p max_3"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "max_3",
+        "npc_name": "Miner Max",
+        "text": "See those ores right in front of you? Try breaking them with your pickaxe to clear the way and move forward.",
+        "buttons":[
+          {
+            "name": "Previous",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1] @p max_2"
+            ]
+          },
+          {
+            "name": "GO"
+          }
+        ]
+      }
+    ]
+  }
+}

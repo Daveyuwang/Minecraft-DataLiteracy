@@ -1,0 +1,242 @@
+{
+  "format_version":"1.20",
+  "minecraft:npc_dialogue":{
+    "scenes":[
+      {
+        "scene_tag": "data_1",
+        "npc_name": "Doto",
+        "text": "§5§lHello adventurer!§r§r\n\nTake a moment to observe the bar graph on the left.",
+        "buttons":[
+          {
+            "name": "Take a look"
+          },
+          {
+            "name": ">Next",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_2",
+              "/dialogue change @e[type=NPC,c=1] data_2 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "data_2",
+        "npc_name": "Doto",
+        "text": "§5I have a series of questions for you based on this graph. If you can answer them correctly, a special reward awaits you!§r\n\n §1§lAre you ready?§r§r",
+        "buttons":[
+          {
+            "name": "YES",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_3",
+              "/dialogue change @e[type=NPC,c=1] data_3 @p"
+            ]
+          },
+          {
+            "name": "NO",
+            "commands":[
+              "/dialogue change @e[type=NPC,c=1] data_2 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "data_3",
+        "npc_name": "Doto",
+        "text": "§l§1Question 1:§r§r\n\n§5Which block type is the most abundant in the Mining Site?§r",
+        "buttons":[
+          {
+            "name": "Coal",
+            "commands":[
+              
+              "/dialogue open @e[type=NPC,c=1]  @p data_3_fail"
+              
+            ]
+          },
+          {
+            "name": "Copper",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_3_fail"
+            ]
+          },
+          {
+            "name": "Iron",
+            "commands":[
+              
+              "/dialogue open @e[type=NPC,c=1]  @p data_3_fail"
+            ]
+          },
+          {
+            "name": "Stone",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_4",
+              "/dialogue change @e[type=NPC,c=1] data_4 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "data_3_fail",
+        "npc_name": "Doto",
+        "text": "§l§4INCORRECT!§r§r\n\n§l§1Question 1:§r§r\n\n§5Which block type is the most abundant in the Mining Site?§r",
+        "buttons":[
+          {
+            "name": "Coal",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_3_fail"
+            ]
+          },
+          {
+            "name": "Copper",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_3_fail"
+            ]
+          },
+          {
+            "name": "Iron",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_3_fail"
+            ]
+          },
+          {
+            "name": "Stone",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_4",
+              "/dialogue change @e[type=NPC,c=1] data_4 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "data_4",
+        "npc_name": "Doto",
+        "text": "§l§1Question 2:§r§r\n\n§5What is the rarest ore in the Mining Site?§r",
+        "buttons":[
+          {
+            "name": "Gold",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_4_fail"
+            ]
+          },
+          {
+            "name": "Lapis",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_4_fail"
+            ]
+          },
+          {
+            "name": "Emerald",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_5",
+              "/dialogue change @e[type=NPC,c=1] data_5 @p"
+            ]
+          },
+          {
+            "name": "Diamond",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_4_fail"
+            ]
+          }
+          
+        ]
+      },
+      {
+        "scene_tag": "data_4_fail",
+        "npc_name": "Doto",
+        "text": "§l§4INCORRECT!§r§r\n\n§l§1Question 2:§r§r\n\n§5What is the rarest ore in the Mining Site?§r",
+        "buttons":[
+          {
+            "name": "Gold",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_4_fail"
+            ]
+          },
+          {
+            "name": "Lapis",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_4_fail"
+            ]
+          },
+          {
+            "name": "Emerald",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_5",
+              "/dialogue change @e[type=NPC,c=1] data_5 @p"
+            ]
+          },
+          {
+            "name": "Diamond",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_4_fail"
+            ]
+          }
+          
+        ]
+      },
+   {
+        "scene_tag": "data_5",
+        "npc_name": "Doto",
+        "text": "§l§1Question 3:§r§r\n\n§5Which has a greater quantity on our graph: §l§6Gold§r§r or §l§3Diamond§r§r? §r",
+        "buttons":[
+          {
+            "name": "Gold",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_6",
+              "/dialogue change @e[type=NPC,c=1] data_6 @p"
+            ]
+          },
+          {
+            "name": "Diamond",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_5_fail"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "data_5_fail",
+        "npc_name": "Doto",
+        "text": "§l§4INCORRECT!§r§r\n\n§l§1Question 3:§r§r\n\n§5Which has a greater quantity on our graph: §l§6Gold§r§r or §l§3Diamond§r§r? §r",
+        "buttons":[
+          {
+            "name": "Gold",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_6",
+              "/dialogue change @e[type=NPC,c=1] data_6 @p"
+            ]
+          },
+          {
+            "name": "Diamond",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p data_5_fail"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "data_6",
+        "npc_name": "Doto",
+        "text": "§l§1 Congratulations!§r§r\n\n§5You have answered all the questions correctly!§r\n\n§l§1Here is your reward!§r§r",
+        "buttons":[
+          {
+            "name": "Claim Reward",
+            "commands":[
+              "playsound random.orb @p",
+              "/give @p diamond_shovel 1",
+              "/dialogue change @e[type=NPC,c=1] data_7 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "data_7",
+        "npc_name": "Doto",
+        "text": "§§l3beep-beep...§r\n§1+_+§r§r",
+        "buttons":[
+          {
+            "name": "..."
+          }
+        ]
+      }
+    ]
+  }
+}

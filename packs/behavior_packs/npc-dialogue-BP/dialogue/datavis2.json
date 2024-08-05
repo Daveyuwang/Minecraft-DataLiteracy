@@ -1,0 +1,242 @@
+{
+  "format_version":"1.20",
+  "minecraft:npc_dialogue":{
+    "scenes":[
+      {
+        "scene_tag": "line_1",
+        "npc_name": "Doto",
+        "text": "§5§lHello adventurer!§r§r\n\nTake a moment to observe the line graph on the left.",
+        "buttons":[
+          {
+            "name": "Take a look"
+          },
+          {
+            "name": ">Next",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_2",
+              "/dialogue change @e[type=NPC,c=1] line_2 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "line_2",
+        "npc_name": "Doto",
+        "text": "§5I have a series of questions for you based on this graph. If you can answer them correctly, a special reward awaits you!§r\n\n §1§lAre you ready?§r§r",
+        "buttons":[
+          {
+            "name": "YES",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_3",
+              "/dialogue change @e[type=NPC,c=1] line_3 @p"
+            ]
+          },
+          {
+            "name": "NO",
+            "commands":[
+              "/dialogue change @e[type=NPC,c=1] line_2 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "line_3",
+        "npc_name": "Doto",
+        "text": "§l§1Question 1:§r§r\n\nAt which level does the line graph show the highest quantity of §l§6Gold§r§r?",
+        "buttons":[
+          {
+            "name": "Level 3",
+            "commands":[
+              
+              "/dialogue open @e[type=NPC,c=1]  @p line_3_fail"
+              
+            ]
+          },
+          {
+            "name": "Level 1",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_4",
+              "/dialogue change @e[type=NPC,c=1] line_4 @p"
+            ]
+          },
+          {
+            "name": "Level 5",
+            "commands":[
+              
+              "/dialogue open @e[type=NPC,c=1]  @p line_3_fail"
+            ]
+          },
+          {
+            "name": "Level 8",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_3_fail"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "line_3_fail",
+        "npc_name": "Doto",
+        "text": "§l§4INCORRECT!§r§r\n§l§1Question 1:§r§r\n\nAt which level does the line graph show the highest quantity of §l§6Gold§r§r?",
+        "buttons":[
+          {
+            "name": "Level 3",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_3_fail"
+            ]
+          },
+          {
+            "name": "Level 1",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_4",
+              "/dialogue change @e[type=NPC,c=1] line_4 @p"
+            ]
+          },
+          {
+            "name": "Level 5",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_3_fail"
+            ]
+          },
+          {
+            "name": "Level 8",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_3_fail"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "line_4",
+        "npc_name": "Doto",
+        "text": "§l§1Question 2:§r§r\n\nIdentify the level where §l§3Diamonds§r§r reach their peak quantity according to the line graph.",
+        "buttons":[
+          {
+            "name": "Level 1",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_4_fail"
+            ]
+          },
+          {
+            "name": "Level 7",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_4_fail"
+            ]
+          },
+          {
+            "name": "Level 5",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_5",
+              "/dialogue change @e[type=NPC,c=1] line_5 @p"
+            ]
+          },
+          {
+            "name": "Level 4",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_4_fail"
+            ]
+          }
+          
+        ]
+      },
+      {
+        "scene_tag": "line_4_fail",
+        "npc_name": "Doto",
+        "text": "§l§4INCORRECT!§r§r\n§l§1Question 2:§r§r\n\nIdentify the level where §l§3Diamonds§r§r reach their peak quantity according to the line graph.§r",
+        "buttons":[
+          {
+            "name": "Level 1",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_4_fail"
+            ]
+          },
+          {
+            "name": "Level 7",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_4_fail"
+            ]
+          },
+          {
+            "name": "Level 5",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_5",
+              "/dialogue change @e[type=NPC,c=1] line_5 @p"
+            ]
+          },
+          {
+            "name": "Level 4",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_4_fail"
+            ]
+          }
+          
+        ]
+      },
+   {
+        "scene_tag": "line_5",
+        "npc_name": "Doto",
+        "text": "§l§1Question 3:§r§r\n\nWhich ore demonstrates a §l§4consistent decline§r§r in quantity from level 0 to level 10?",
+        "buttons":[
+          {
+            "name": "Diamond",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_5_fail"
+            ]
+          },
+          {
+            "name": "Gold",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_6",
+              "/dialogue change @e[type=NPC,c=1] line_6 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "line_5_fail",
+        "npc_name": "Doto",
+        "text": "§l§4INCORRECT!§r§r\n§l§1Question 3:§r§r\n\nWhich ore demonstrates a §l§4consistent decline§r§r in quantity from level 0 to level 10?",
+        "buttons":[
+          {
+            "name": "Diamond",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_5_fail"
+            ]
+          },
+          {
+            "name": "Gold",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p line_6",
+              "/dialogue change @e[type=NPC,c=1] line_6 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "line_6",
+        "npc_name": "Doto",
+        "text": "§l§1 Congratulations!§r§r\n\n§5You have answered all the questions correctly!§r\n\n§l§1Here is your reward!§r§r",
+        "buttons":[
+          {
+            "name": "Claim Reward",
+            "commands":[
+              "playsound random.orb @p",
+              "/give @p golden_pickaxe 1",
+              "/dialogue change @e[type=NPC,c=1] line_7 @p"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "line_7",
+        "npc_name": "Doto",
+        "text": "§§l3beep-beep...§r\n§1+_+§r§r\n\n§b^_^ beep-blop...§r",
+        "buttons":[
+          {
+            "name": "..."
+          }
+        ]
+      }
+    ]
+  }
+}

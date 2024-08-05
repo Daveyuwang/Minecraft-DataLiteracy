@@ -1,0 +1,19 @@
+{
+    "format_version": 2,
+    "header" : {
+        "description": "§a§lData Literacy Gameplay Resource Pack§r§r\nNote: This pack should be used with the required Behavior Pack.",
+        "name" : "Data-Literacy-Gameplay RP",
+        "uuid": "85e12b59-f466-4960-b806-4565578233af",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 16, 0]
+    },
+
+    "modules": [
+        {
+            "description": "Data Visualization Resource Pack",
+            "type": "resources",
+            "uuid": "340a2165-a1c2-4a41-a954-916440a4e7e3",
+            "version": [1, 0, 0]
+        }
+    ]
+}

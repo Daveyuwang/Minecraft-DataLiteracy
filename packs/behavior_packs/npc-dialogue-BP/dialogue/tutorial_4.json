@@ -1,0 +1,55 @@
+{
+  "format_version":"1.20",
+  "minecraft:npc_dialogue":{
+    "scenes":[
+      {
+        "scene_tag": "bito_tut_1",
+        "npc_name": "Bito",
+        "text": "§b^_^ beep-blop...§r\nJust like last time, here's more cool stuff!\n§l'Max@Layer'§r shows which layer is the §2richest§r in blocks. It's where you'll find the most §l'count'§r of a certain block type.",
+        "buttons":[
+          {
+            "name": "> Next",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p bito_tut_2"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "bito_tut_2",
+        "npc_name": "Bito",
+        "text": "In the future, you might come across terms like §l'most frequent'§r, §l'average'§r, and a bunch of other geeky stats.\n They're super helpful for smart mining!\n",
+        "buttons":[
+          {
+            "name":"< Back",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p bito_tut_2"
+            ]
+          },
+          {
+            "name": "> Next",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1] @p bito_tut_3"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "bito_tut_3",
+        "npc_name": "Bito",
+        "text": "§3beep-beep...§r\n§1+_+§r",
+        "buttons":[
+          {
+            "name": "< Back",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1] @p bito_tut_2"
+            ]
+          },
+          {
+            "name": "....."
+          }
+        ]
+      }
+    ]
+  }
+}

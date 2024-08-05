@@ -1,0 +1,74 @@
+{
+  "format_version":"1.20",
+  "minecraft:npc_dialogue":{
+    "scenes":[
+      {
+        "scene_tag": "ivy_1",
+        "npc_name": "Info Ivy",
+        "text": "Fantastic work! I'm Info Ivy, here to help you dig deeper into the world of mining.",
+        "buttons":[
+          {
+            "name": "What should I do?",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p ivy_2"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "ivy_2",
+        "npc_name": "Info Ivy",
+        "text": "Mining is more than just breaking blocks; it's powered by data. Let me show you how to interpret and utilize this data for smarter mining.",
+        "buttons":[
+          {
+            "name":"< Back",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p ivy_1"
+            ]
+          },
+          {
+            "name": "Guide me",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1] @p ivy_3"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "ivy_3",
+        "npc_name": "Info Ivy",
+        "text": "Over there, on the right, is our Information Board. It's packed with key stats about the mining site in front.",
+        "buttons":[
+          {
+            "name": "< Back",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1] @p ivy_2"
+            ]
+          },
+          {
+            "name": "Got it",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p ivy_4"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "ivy_4",
+        "npc_name": "Info Ivy",
+        "text": "And there's Bito, our friendly data expert! Bito is great at helping you understand the mining data.",
+        "buttons":[
+          {
+            "name": "< Back",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1] @p ivy_3"
+            ]
+          },
+          {
+            "name": "OK"
+          }
+        ]
+      }
+    ]
+  }
+}

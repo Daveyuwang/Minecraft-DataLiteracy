@@ -1,0 +1,22 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "mg:starter",
+            "materials": {
+                "default": "npc"
+            },
+            "textures": {
+                "default": "textures/entity/npc/npc_Kiosk_4"
+            },
+            "geometry": {
+                "default": "geometry.npc"
+            },
+            "render_controllers": ["controller.render.default"],
+            "spawn_egg": {
+                "base_color": "#04b8ff",
+                "overlay_color": "#06f98c"
+            }
+        }
+    }
+}

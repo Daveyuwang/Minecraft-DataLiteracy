@@ -1,0 +1,55 @@
+{
+  "format_version":"1.20",
+  "minecraft:npc_dialogue":{
+    "scenes":[
+      {
+        "scene_tag": "sage_1",
+        "npc_name": "Sage",
+        "text": "Hey there! Welcome to the World of Mining. I'm here to show you the ropes. Let's get started, shall we?",
+        "buttons":[
+          {
+            "name": "Say Hi",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p sage_2"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "sage_2",
+        "npc_name": "Sage",
+        "text": "You'll need a pickaxe for the ores and a shovel for the dirt. Exciting, right? Let's gear you up!",
+        "buttons":[
+          {
+            "name":"Previous",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1]  @p sage_1"
+            ]
+          },
+          {
+            "name": "Next",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1] @p sage_3"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "sage_3",
+        "npc_name": "Sage",
+        "text": "Check the chest right here for your tools. Once you get them, head on over to the next part of the tutorial to learn more.",
+        "buttons":[
+          {
+            "name": "Previous",
+            "commands":[
+              "/dialogue open @e[type=NPC,c=1] @p sage_2"
+            ]
+          },
+          {
+            "name": "OK"
+          }
+        ]
+      }
+    ]
+  }
+}
