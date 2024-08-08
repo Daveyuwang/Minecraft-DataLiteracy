@@ -23,5 +23,4 @@ Troubleshooting:
 - Run as administrator
 - Ensure server files are correctly downloaded and extracted
 - Script should be in same directory as bedrock_server.exe or a parent directory
-- Check firewall settings
 - Verify you have the latest Bedrock Dedicated Server files
