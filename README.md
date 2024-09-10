@@ -60,7 +60,4 @@ To work on and test the project:
 Data collection for this project currently focuses on logging player behavior in the Treasure Hunt mini-game.
 
 ### With Dedicated Server
-- To be implemented.
-
-### Local Gameplay
-- To be implemented.
+- To be updated.
