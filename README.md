@@ -1,7 +1,7 @@
 # Minecraft Data Literacy
 ## Overview
 
-This project aims to improve data literacy through a fun and interactive experience in Minecraft Bedrock Edition. Players engage in educational activities, such as NPC dialogues and data visualizations, to learn key data concepts. 
+This project aims to improve data literacy through a fun and interactive experience in *Minecraft Bedrock Edition*. Players engage in educational activities, such as NPC dialogues and data visualizations, to learn key data concepts. 
 
 ### Features
 
@@ -11,15 +11,20 @@ This project aims to improve data literacy through a fun and interactive experie
 
 ## Requirements
 
-- Latest version of Minecraft Bedrock Edition
+- Latest version of *Minecraft Bedrock Edition*
 - Operating System: Windows 10/11 (Recommended)
 
-## Components
-1. **Gameplay Behavior Pack**: Implements core gameplay mechanics and data visualizations.
-2. **NPC Dialogue Behavior Pack**: Manages NPC interactions and dialogue systems.
-3. **Gameplay Resource Pack**: Provides visual assets for the gameplay features.
-4. **World Template (`dtworld`)**: A pre-configured world that works well with the provided packs.
+## **Components**
 
+All Packs are developed using *Minecraft Bedrock Scripting API*. The API version must be the latest in order to function normally in the latest release of *Minecraft Bedrock*.
+
+1. **Gameplay Behavior Pack**: Implements core gameplay mechanics and data visualizations.
+
+2. **NPC Dialogue Behavior Pack**: Manages NPC interactions and dialogue systems.
+
+3. **Gameplay Resource Pack**: Provides visual assets for the gameplay features.
+
+4. **World Template (`dtworld`)**: A pre-configured world that works well with the provided packs.
 
 ## Installation
 
@@ -56,8 +61,34 @@ To work on and test the project:
 2. Place all packs in the `development_packs` folder under the game directory `com.mojang`.
 3. The `packs/` directory contains the source files for behavior and resource packs.
 
-## Data Collection
-Data collection for this project currently focuses on logging player behavior in the Treasure Hunt mini-game.
+## **Session & Data Collection**
 
-### With Dedicated Server
-- To be updated.
+A **'Session'** refers to the educational mini-game component in this project. During the session, the player engages in the mini-game, and their behavior is logged for analysis.
+
+### **Purpose**
+
+The goal of data collection (logging) is to **demonstrate and analyze the impact of gamification and interactive designs on the user's learning process and outcomes**.
+
+### **Session Management**
+
+Sessions can be ended in the following ways:
+
+1. The session is stopped automatically when the player achieves the goal in the mini-game.
+2. **Idle Detection**: A player is considered idle under the following conditions:
+   - **No movement for 5 minutes**
+   - **No camera rotation for 3 minutes**
+
+If the player is idle, the session is **forcibly stopped** and **will not resume**.
+
+> **Note:**
+> - The **total session time** and the player's **engagement time** are recorded.
+> - After the session ends, the player can still interact with the game, but **no further data will be collected**.
+
+### **Data Storage & Transmission**
+
+Due to the limitations of the *Minecraft Bedrock Scripting API* in accessing the local file system:
+
+- Collected data is stored in-game using `dynamic properties`.
+- Data is transmitted by **encoding the data into a URI**.
+- The script generates a **URL** and sends it to the user in-game.
+- The user sends the data by **clicking the URL**, which transmits it to the designated server.
