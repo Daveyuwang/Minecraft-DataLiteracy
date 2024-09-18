@@ -112,9 +112,7 @@ Due to the limitations of the *Minecraft Bedrock Scripting API* in accessing the
    - For block distribution visualizations, log if the player mines on the correct level.
    - For line graphs showing distance over time, log correct decisions if the player's actions follow the trend (e.g., continuing in the same direction if distance is decreasing).
    - For scatter plots of mining distance vs. treasure distance, log correct decisions if the player focuses on areas indicated by the plot.
-
-
-
+   
    > **Note:**
    > A **correct decision** is defined as any action that brings the player closer to the treasure. This is measured by comparing the player's distance from the treasure block before and after the decision is made.
 
@@ -122,4 +120,5 @@ Due to the limitations of the *Minecraft Bedrock Scripting API* in accessing the
    - Time elapsed and blocks mined (both total and on the correct level) at checkpoints.
    - Visualization usage summary, including the number of visualizations accessed and most frequently viewed.
    - Record "correct decisions" and actions taken since the last checkpoint, including any additional guidance or tips viewed.
+
 
