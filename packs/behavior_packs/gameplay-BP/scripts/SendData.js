@@ -36,7 +36,7 @@ system.runInterval(() => {
 function sendData(player) {
     const data = world.getDynamicProperty("collectedData") || "[]";
     const encodedData = encodeURIComponent(data);
-    const url = `https://your-server.com/api/data?player=${encodeURIComponent(player.name)}&data=${encodedData}`;
+    const url = `https://designated-server.com/api/data?player=${encodeURIComponent(player.name)}&data=${encodedData}`;
     player.sendMessage(`§2§l[Click here to send data]§r(${url})`);
     // Clear the stored data after sending
     world.setDynamicProperty("collectedData", "[]");
