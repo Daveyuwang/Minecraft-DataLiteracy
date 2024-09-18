@@ -1,12 +1,13 @@
 import { world, system } from "@minecraft/server";
 
+
 export let elapsedMilliseconds = 0;
 export let elapsedSeconds = 0;
 export let timerActive = true;
 let timerInterval = null;
 let isTimerDisplay = true;
 
-function startTimer() {
+export function startTimer() {
   if (!timerInterval) {
     let lastDisplayUpdate = 0;
     timerInterval = system.runInterval(() => {
@@ -33,7 +34,7 @@ export async function disableTimerDisplay(){
   }, 100);
 }
 
-function stopTimer() {
+export function stopTimer() {
   if (timerInterval) {
     system.clearRun(timerInterval);
     timerInterval = null;
@@ -72,9 +73,9 @@ export function toggleTimer() {
   }
 }
 
-world.afterEvents.worldInitialize.subscribe(() => {
-  startTimer();
-});
+// world.afterEvents.worldInitialize.subscribe(() => {
+//   startTimer();
+// });
 
 world.afterEvents.chatSend.subscribe((eventData) => {
   if (eventData.message === "reset timer") {

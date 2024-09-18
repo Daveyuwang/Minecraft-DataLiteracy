@@ -1,4 +1,4 @@
-import { world, system, Block, System } from "@minecraft/server";
+import { world, system } from "@minecraft/server";
 import { ActionFormData, ModalFormData } from "@minecraft/server-ui";
 import { TextDisplay } from "./TextDisplay.js";
 import { TextDisplayV2 } from "./TextDisplayV2.js";
@@ -7,6 +7,7 @@ import { disableTimerDisplay, elapsedSeconds, timerActive, toggleTimer} from "./
 import { dataPoints } from "./scatterplotData.js";
 import { STARTER_ENTITY_ID } from "./MiniGames.js";
 import { generateTreasureBlock } from "./TreasureHunt.js";
+import { sessionStartTime } from "./Session.js";
 
 // initialize the block counts for each level
 world.afterEvents.worldInitialize.subscribe(() => {
