@@ -92,3 +92,32 @@ Due to the limitations of the *Minecraft Bedrock Scripting API* in accessing the
 - Data is transmitted by **encoding the data into a URI**.
 - The script generates a **URL** and sends it to the user in-game.
 - The user sends the data by **clicking the URL**, which transmits it to the designated server.
+
+## **Data to Collect**
+
+1. **Engagement Metrics**
+   - **Engagement Time**: Compare the player's active engagement time to the total session time.
+
+2. **Visualization Usage**
+   - Types of visualizations accessed, including their frequency and time spent viewing each.
+   - The order in which visualizations are accessed.
+
+3. **Performance Metrics**
+   - Time taken to find the treasure.
+   - Total blocks mined and blocks mined at the correct level.
+
+4. **Player Behavior Post-Visualization / Post-Guidance**
+   - Log decision points and actions after viewing visualizations or receiving guidance.
+   - Track changes in mining direction, level, and proximity to the treasure after visualizations.
+   - For block distribution visualizations, log if the player mines on the correct level.
+   - For line graphs showing distance over time, log correct decisions if the player's actions follow the trend (e.g., continuing in the same direction if distance is decreasing).
+   - For scatter plots of mining distance vs. treasure distance, log correct decisions if the player focuses on areas indicated by the plot.
+
+   > **Note:**
+   > A **correct decision** is defined as any action that brings the player closer to the treasure. This is measured by comparing the player's distance from the treasure block before and after the decision is made.
+
+5. **Checkpoint Data**
+   - Time elapsed and blocks mined (both total and on the correct level) at checkpoints.
+   - Visualization usage summary, including the number of visualizations accessed and most frequently viewed.
+   - Record “correct decisions” and actions taken since the last checkpoint, including any additional guidance or tips viewed.
+
