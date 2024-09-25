@@ -8,25 +8,25 @@ This project aims to improve data literacy through a fun and interactive experie
 - **NPC Dialogues**: Interact with NPCs to gain information and guidance.
 - **Data Visualizations**: Use various graphs, including bar graphs, line graphs, and scatterplots.
 
-<details>
-  <summary>Click to expand</summary>
+- <details>
+  <summary>View Available Data Visualizations</summary>
   
   These visualizations are designed to be dynamic and adaptable based on gameplay data:
 
   - **Bar Graphs**:
-    - Top 8 block types at a specific level.
-    - Block diversity across different levels.
-    - Block quantity distribution across levels.
+    - Top 8 block types at a specific level
+    - Block diversity across different levels
+    - Block quantity distribution across levels
   
   - **Line Graphs**:
     - Block changes over time.
-    - Block changes for specific block types over time.
-    - Player distance progression over time.
-    - Distance from the treasure block over time (mini-game specific).
+    - Block changes for specific block types over time
+    - Player distance progression over time
+    - Distance from the treasure block over time (mini-game specific)
   
   - **Scatterplots**:
-    - Mining distance vs. average block break time.
-    - Mining distance vs. treasure distance (mini-game specific).
+    - Mining distance vs. average block break time
+    - Mining distance vs. treasure distance (mini-game specific)
 
 </details>
 
