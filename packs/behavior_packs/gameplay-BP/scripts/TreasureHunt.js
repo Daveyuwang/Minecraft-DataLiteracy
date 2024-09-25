@@ -561,14 +561,18 @@ function handleDotoInteraction(player) {
     }
 }
 
-world.afterEvents.playerInteractWithEntity.subscribe((event) => {
+world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
     const entity = event.target;
     const player = event.player;
     
     if (entity.typeId === GUIDE_ENTITY_ID) {
-        showCurrentGuidance();
+        system.runTimeout(() => {
+            showCurrentGuidance();
+        }, 1);
     } else if (entity.typeId === HELPER2_ENTITY_ID) {
-        handleDotoInteraction(player);
+        system.runTimeout(() => {
+            handleDotoInteraction(player);
+        }, 1);
     }
 });
 

@@ -8,13 +8,15 @@ export const STARTER_ENTITY_ID = "mg:starter";
 
 
 // INTERACT WITH THE STARTER TO OPEN THE FORM
-world.afterEvents.playerInteractWithEntity.subscribe((event) => {
-  const entity = event.target.typeId;
-  // world.sendMessage(`Interacted with ${entity}`);
-  if( entity === STARTER_ENTITY_ID){
-    starterForm();
+
+world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
+  if (event.target.typeId === STARTER_ENTITY_ID) {
+    system.runTimeout(() => {
+      starterForm();
+    }, 1);
   }
 });
+
 
 // THE STARTER FORM
 function starterForm(){
