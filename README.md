@@ -1,4 +1,3 @@
-# Minecraft Data Literacy
 ## Overview
 
 This project aims to improve data literacy through a fun and interactive experience in *Minecraft Bedrock Edition*. Players engage in educational activities, such as NPC dialogues and data visualizations, to learn key data concepts.
